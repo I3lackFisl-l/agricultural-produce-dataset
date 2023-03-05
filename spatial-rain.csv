@@ -1,4 +1,4 @@
-﻿ProvinceID,ProvinceName,MinRain,MaxRain,AvgRain,Year,Month,Date
+ProvinceID,ProvinceName,MinRain,MaxRain,AvgRain,Year,Month,Date
 10,กรุงเทพมหานคร,54.29999924,257.230011,142.1191368,2018,1,1/1/2018
 11,สมุทรปราการ,76.25,256.1000061,137.3020457,2018,1,1/1/2018
 12,นนทบุรี,38.36000061,161.4700012,113.4337711,2018,1,1/1/2018
