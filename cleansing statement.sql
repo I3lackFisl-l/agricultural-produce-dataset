@@ -11,6 +11,9 @@ with a as(
 --) s on s.ProvinceName = a.region_province
 --where s.ProvinceID is null
 insert into argriculture_produce_with_rain
-select provinceid, provincename, minrain, maxrain, avgrain, year_no, month_no, date, plant, produce_value 
+select s.provinceid, s.provincename, s.minrain, s.maxrain, s.avgrain, s.Year, s.Month, date, plant, produce_value 
 from spatial_rain s
-inner join a on a.year_no = s.Year and a.month_no = s.Month and a.region_province = s.ProvinceName
+left join a on a.year_no = s.Year and a.month_no = s.Month and a.region_province = s.ProvinceName
+where s.year between 2018 and 2019
+
+--delete argriculture_produce_with_rain
